@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+	<!-- Fuentes de google-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	
+	<!-- Para que se pueda tomar el viewport de referencia-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Para poder escribir en español-->
+	<meta charset="utf-8">
+
+	<!-- Hoja de estilos-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Educación Física: Entre Prácticas y Políticas</title>
+
+
+	<style type="text/css">
+
+
+
+
+/*CIRCULARES*/
+#circular1{
+	padding-top: 20px;
+}
+
+/*PDF*/
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+		/* Carousel: quitar los indicadores*/
+			.carousel-indicators li { visibility: hidden; }
+
+	 /* Los titulos que van arriba de las imágenes (del Slider)*/
+			.carouseltitles{
+				position: absolute; 
+				z-index: 2; 
+				left: 25%; 
+				top: 30%; 
+				color: white; 
+				max-width: 50%; 
+				text-align: center;  
+				background-color: hsla(120, 0%, 0%, 0.3); 
+
+				padding: 20px; 
+
+				border-color: white; 
+				border-style: solid; 
+				border-width: 2px;
+			}
+			.carouseltitles p{
+				margin: 0px; 
+				font-size:1.8vw;
+			}
+		
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a href="#"><img class="logo" id="logo"  src="img/encuentro.png" width="230px" ></a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown active">
+		        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Acerca del PDI <span class="caret"></span></a>
+		        		<ul class="dropdown-menu">
+		        			<li><a href="index.html">¿Qué es PDI?</a></li>
+		        			<li><a href="index.html#docs">Documentos disponibles</a></li>
+		        		</ul>
+				</li>
+
+		        <li><a href="news.html#myCarousel">Novedades</a></li>				
+
+				<li>
+		        	<a href="ejes.html" href="#">Ejes temáticos</a>
+				</li>
+
+		      </ul>
+	      <ul class="nav navbar-nav navbar-right" id="socialnetworks">
+	      	<li><a href="http://www.isef.edu.uy"><img src="img/iseficon.png"></a></li>
+	        <li><a href="https://www.facebook.com/Instituto-Superior-de-Educaci%C3%B3n-F%C3%ADsica-Uruguay-234936039980713"><img src="img/fbicon.png"></a></li>
+	        <li><a href="https://twitter.com/ISEF_UdelaR"><img src="img/twicon.png"></a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+
+
+
+
+<!-- CAROUSEL -->
+
+
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		      <li data-target="#myCarousel" data-slide-to="2"></li>
+		      <li data-target="#myCarousel" data-slide-to="3"></li>
+		      <li data-target="#myCarousel" data-slide-to="4"></li>
+		      <li data-target="#myCarousel" data-slide-to="5"></li>
+		    </ol> 
+
+
+		    <!-- Wrapper for slides -->   
+		    <div class="carousel-inner"><!-- style="position: relative; z-index: 1;"-->
+			      <div class="item active">
+			        <img src="img/01.jpg" alt="encuentro" style="width:100%;">
+			      </div>
+
+			      <div class="item">
+			        <img src="img/02.jpg" alt="encuentro" style="width:100%;">
+			      </div>
+			    
+			      <div class="item">
+			        <img src="img/03.jpg" alt="encuentro" style="width:100%;">
+			      </div>
+			      <div class="item">
+			        <img src="img/04.jpg" alt="encuentro" style="width:100%;">
+			      </div>
+			      <div class="item">
+			        <img src="img/05.jpg" alt="encuentro" style="width:100%;">
+			      </div>
+			      <div class="item">
+			        <img src="img/06.jpg" alt="encuentro" style="width:100%;">
+			      </div>
+			      <div class="carouseltitles"> <p>Plan de Desarrollo Institucional 2020-2025 <br>¿Qué es?</p>
+			      </div>
+		    </div>
+
+		    <!-- Left and right controls 
+		    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		      <span class="glyphicon glyphicon-chevron-left"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		      <span class="glyphicon glyphicon-chevron-right"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
+		    -->
+		</div>
+
+
+
+	<div class="container content">
+
+		<p> Siendo el Instituto Superior de Educación Física (ISEF) de la Universidad de la República (UdelaR) una institución que ha atravesado importantes y vertiginosas adaptaciones al ámbito universitario, la Dirección de ISEF entiende conveniente dar inicio a un proceso de elaboración de un "plan de desarrollo institucional para el período 2020-2025. Este documento permitiría establecer lineamientos generales que orienten los procesos colectivos de toma de decisiones de una todavía novel institución universitaria que aspira a consolidarse dentro de la UdelaR, alcanzando los más amplios niveles de autonomía posibles."</p>
+		
+		<div id="collapseintro" class="collapse">
+		    Si es necesario que toda la institución se proyecte a mediano y largo plazo, definiendo objetivos generales que organicen en torno suyo las tareas que cotidianamente en ella se desarrollan, el compromiso ético con la gestión pública y con el cogobierno refuerzan esta necesidad. En este sentido, las tareas que llevan adelante docentes, estudiantes, egresados y funcionarios técnicos, administrativos y de servicio, se verán fortalecidas a partir de la existencia de amplios consensos respecto a los rumbos que colectivamente ISEF se proponga transitar. Corresponde reconocer una importante acumulación en el sentido de acercarnos progresivamente a los que han sido los dos grandes objetivos que institucionalmente nos hemos atrevido a proponernos: por un lado consolidar el campo académico de la educación física, en su diálogo con el campo porvesional; y al mismo tiempo, eliminar las restricciones en el ingreso a las carreras de pre-grado y grado a nivel nacional. Trabajar sostenida y sistemáticamente para alcanzar ambas metas ha permitido implementar políticas de largo aliento, dando continuidad a transformaciones generales de ISEF. el principal atnecedente, en este sentido, lo constituye el "Plan de Desarrollo y pedido presupuestal 2015-2019", aprobado por la Comisión Directiva de ISEF el 7 de agosto de 2015.
+		    ...
+
+		</div>
+		<a href="#seguirleyendo" id="seguirleyendo" data-toggle="collapse" data-target="#collapseintro" onclick="$(this).hide();">Seguir leyendo...</a>
+	</div>
+
+ <!-- El separador de "Circulares"-->
+		  <div class="imgseparador">
+		 	<img src="img/01.jpg" width="100%"> 
+		  	  <div class="imgtitles" style="left: 45%;"> <p>Documentos disponibles</p></div>
+
+		   </div>   
+
+ <!-- Acá empiezan los TABS-->
+	   
+	<div class="container content" id="docs">
+
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#documento0">PDI 2021-2025</a></li>
+		    <li><a data-toggle="tab" href="#documento1">Propuesta de elaboración de PDI 2020-2025</a></li>
+		    <li><a data-toggle="tab" href="#documento2">Ejes temáticos</a></li>
+		    <li><a data-toggle="tab" href="#documento3">Orientaciones generales para el trabajo de los GT</a></li>
+	  	</ul>
+	  		<div class="tab-content">
+
+				<div id="documento0" class="tab-pane fade in active">
+	<!-- Contenido de documento 0-->
+					<a href="img/doc 0.pdf"><h4>Descargar documento</h4></a>
+					<div class='embed-responsive' style='padding-bottom:150%'>
+					    <object data='img/doc 0.pdf' type='application/pdf' width='100%' height='100%'></object>
+					</div>
+				</div>
+
+	  			<div id="documento1" class="tab-pane fade in active">
+	<!-- Contenido de 1er documento-->
+					<a href="img/doc 1.pdf"><h4>Descargar documento</h4></a>
+					<div class='embed-responsive' style='padding-bottom:150%'>
+					    <object data='img/doc 1.pdf' type='application/pdf' width='100%' height='100%'></object>
+					</div>
+	<!-- Fin de 1er documento-->
+				</div>
+
+				<div id="documento2" class="tab-pane fade">
+		<!-- Contenido de 2do documento-->
+					<a href="img/doc 2.pdf"><h4>Descargar documento</h4></a>
+					<div class='embed-responsive' style='padding-bottom:150%'>
+					    <object data='img/doc 2.pdf' type='application/pdf' width='100%' height='100%'></object>
+					</div>
+	<!-- Fin de 2do documento-->
+				</div>
+
+				<div id="documento3" class="tab-pane fade">
+
+	<!-- Contenido de 3er documento-->
+
+
+					<a href="img/doc 3.pdf"><h4>Descargar documento</h4></a>
+					<div class='embed-responsive' style='padding-bottom:150%'>
+					    <object data='img/doc 3.pdf' type='application/pdf' width='100%' height='100%'></object>
+					</div>
+	<!-- Fin de 3er documento-->
+				</div>
+			</div>
+<!-- Fin de TABS-->
+	</div>
+	<footer class="container-fluid bg-4 text-center">
+  		<p>Administración, desarrollo y mantenimiento: Unidad de Comunicación & Unidad de Informática - ISEF - UDELAR <a href="https://www.isef.edu.uy">www.isef.edu.uy</a></p>
+  		<img id="footerlogo" src="img/encuentroisefudelar.png" width="620px">
+	</footer>
+</body>
+</html>

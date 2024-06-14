@@ -1,0 +1,223 @@
+/*AJUSTES GENERALES*/		
+		*{
+		    box-sizing: border-box;
+
+		}
+		body{
+			/*background-color: #13A9FA;*/
+			margin: 0;
+			padding: 0;
+			padding-top: 70px;
+			font-family: 'Open Sans', 'Raleway', serif;
+        	font-size: 16px;
+        	background-color: #fffffe;
+		}
+	
+
+		/*Cambia tamaño de fuente si la pantalla mide mas de 1200*/
+		@media screen and (min-width: 1200px){   
+		    body{font-size: 20px;} 
+		}
+
+
+
+		/*Para que el LOGO cambie según el tamaño de la pantalla*/
+
+		@media screen and (max-width: 215px){   
+		    #logo{content:url("img/encuentro2.png"); width: 100px;} 
+		}
+
+		@media (min-width: 216px){      
+		      #logo{content:url("img/encuentro.png"); width: 230px;} 
+		}
+		@media screen and (max-width: 215px) {
+		    body { padding-top: 0px; }
+		}
+
+		/*para que los iconos de redes sociales desaparezcan y se achiquen cuando el tamaño del viewport es menor a 1278px*/
+		@media (max-width: 1692px){      
+		      #socialnetworks{visibility: hidden; height: 0px;} 
+		}
+
+		/*Para que el LOGO del footer cambie según el tamaño de la pantalla*/
+		@media screen and (min-width: 620px){   
+		    #footerlogo{content:url("img/encuentroisefudelar.png"); width: 620px;} 
+		}
+		@media screen and (max-width: 650px){   
+		    #footerlogo{content:url("img/encuentroisef.png"); width: 400px;} 
+		}
+		@media screen and (max-width: 420px){   
+		    #footerlogo{content:url("img/encuentro.png"); width: 230px;} 
+		}
+		@media screen and (max-width: 215px){   
+		    #footerlogo{content:url("img/encuentro2.png"); width: 100px;} 
+		}
+
+
+		/*Especificaciones generales para los divs*/
+		/* Para visualizar los bordes del slider
+		.slider{
+			background-color: red;
+			
+			border-style: double;
+			border-color: yellow;
+		}*/
+		.content{
+			width: 75%;
+			padding-top: 50px;		
+			padding-bottom: 50px;	
+			
+			color: #666;
+			/*Para visualizar los tamaños de los divs
+			border-style: double;
+			border-color: yellow;*/
+		}
+
+		.content h2{
+			color: #4CB9A9;
+
+		}
+		.content a{
+			color: #4CB9A9;
+
+		}
+
+		.content h4{
+			color: #e94d28;
+
+		}
+
+		footer{
+			padding: 35px;
+			background-color: #4CB9A9;
+			color: white;
+			font-size: 16px;
+		}
+
+		/* no se si centrar alinear a la derecha a los logos
+		footer img{
+			float: right;
+		}*/
+
+
+
+		/*
+		.row:after {
+		    content: "";
+		    clear: both;
+		    display: table;
+		}*/
+
+		/*Esto de la grilla no la he necesitado
+
+		[class*="col-"] {
+		    float: left;
+		    padding: 15px;
+		    border: 1px solid red;
+
+		}
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%; 	padding: 3%;}*/
+
+ /* Encabezado*/
+		.navbar{
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 8;
+			background-color: #4CB9A9;
+			border: none;
+		  	border-radius: 0;
+		  	margin: 0px;
+
+		}
+		.navbar a{
+			color: white;
+		}
+		
+		.navbar a:hover {
+			color: #FAB439; /* AMARILLO*/
+		}
+		.navbar-toggle .icon-bar { 
+			background-color: #fff;
+		}
+		.navbar-collapse{ 
+			z-index: 50;
+		}
+		ul{
+			float: bottom;
+		}
+
+		.active a{
+			color: white;
+			background-color: #FAB439;
+		}
+
+
+
+/* MENUs extendidos */
+
+.dropdown-menu{
+	background-color: white !important;
+}
+.dropdown-menu a{
+	color: #4CB9A9 !important;
+}
+
+
+
+/* Para los títulos que van sobre las imágenes */
+		.imgseparador{
+			position: relative;
+			display: inline-block;
+			width: 100%;
+		}
+
+		.imgtitles{
+			position: absolute; 
+			z-index: 2; 
+			
+			top: 50%; 
+			color: white; 
+			text-align: center;  
+			background-color: hsla(120, 0%, 0%, 0.3); 
+
+			padding: 10px; 
+
+			border-color: white; 
+			border-style: solid; 
+			border-width: 2px;"
+		}
+		.imgtitles p{
+			margin: 0px; 
+			font-size:2vw;
+		}
+
+
+
+
+
+/* Noticias */
+
+.allnews{display: flex; flex-direction: column; padding: 10px;}
+.news{padding: 20px; width: 100%; display: flex; flex-direction: row; flex-wrap: nowrap;}
+.newsimg{margin: 10px; height: 150px; width: 150px; display: flex;}
+.newsimg img{max-width: 150px;}
+.newstxt{margin: 10px; height: 150px;  min-width: 200px; display: flex; flex-direction: column;}
+.newstxt h3{text-decoration: underline; color: #FAB439}
+.newstxt p{font-size: 14px}
+.newstxt a{font-size: 14px}
+
+@media screen and (max-width: 650px){   
+		    .news {flex-direction: column; align-items: center;}
+		}
